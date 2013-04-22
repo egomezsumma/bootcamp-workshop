@@ -5,18 +5,15 @@ This workshop was prepared for the Global Windows Azure Bootcamp. We decided to 
 ## Tools you'll need
 
 1. node.js http://nodejs.org/download/ 
-    -  windows: utilizar distribución binaria 
-    -  osx: utilizar distribución binaria o nave 
-    -  [linux via package manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) 
 
-2. un editor de texto para programadores. Recomendamos: 
+2. Text editor. We recommend:
     -  Sublime Text 2 http://www.sublimetext.com/2 
     -  Textmate (solo OSx) http://macromates.com/ 
     -  E-TextEditor (solo Windows) http://www.e-texteditor.com/ 
 
 3. Git 
-    -  windows y osx: http://git-scm.com/downloads 
-    -  linux instalar con apt-get, yum o el package manager que utilice la distribución.
+    -  windows and osx: http://git-scm.com/downloads 
+    -  linux install with apt-get, yum or whatever package manager you use
 
 
 ## Modules
