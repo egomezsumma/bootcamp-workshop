@@ -12,11 +12,11 @@ app.configure(function (){
 var documents = {
   '12345': {
     id: '12345',
-    content: 'Documento 12345, blabliblo'
+    content: 'Document 12345, blabliblo'
   },
   '67891': {
     id: '67891',
-    content: 'Documento 67891, blabliblo'
+    content: 'Document 67891, blabliblo'
   }
 };
 
@@ -29,10 +29,7 @@ app.get('/doc/:id', function (req, res) {
   }
 });
 
-app.put('/doc/:id', function (req, res) {
-  documents[req.params.id].content = req.body.content;
-  res.send(200);
-});
+//app.put('/doc/:id', function (req, res) {
 
 http.createServer(app)
     .listen(8080, function () {

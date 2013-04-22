@@ -5,18 +5,16 @@ var app     = express();
 app.configure(function (){
   this.set("view engine", "jade");
   this.set("views", __dirname + "/views");
-  this.use(express.static(__dirname + '/public'));
-  this.use(express.bodyParser());
 });
 
 var documents = {
   '12345': {
     id: '12345',
-    content: 'Documento 12345, blabliblo'
+    content: 'Document 12345, blabliblo'
   },
   '67891': {
     id: '67891',
-    content: 'Documento 67891, blabliblo'
+    content: 'Document 67891, blabliblo'
   }
 };
 
@@ -27,11 +25,6 @@ app.get('/doc/:id', function (req, res) {
   } else {
     res.render('doc', doc);
   }
-});
-
-app.put('/doc/:id', function (req, res) {
-  documents[req.params.id].content = req.body.content;
-  res.send(200);
 });
 
 http.createServer(app)

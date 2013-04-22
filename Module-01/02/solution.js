@@ -2,11 +2,11 @@ var http = require('http');
 
 http.createServer(function (req, res) {
   if (req.url === '/hello') {
-    return res.end('hola mundo');
+    return res.end('hello world');
   }
 
   if (req.url === '/bye') {
-    return res.end('chau mundo');
+    return res.end('bye world');
   }
 
   res.statusCode = 404;

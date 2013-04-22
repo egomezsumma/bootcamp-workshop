@@ -1,47 +1,45 @@
 # Módulo 1 - express.js
 
-En este módulo aprenderemos a utilizar el modulo Express.js para aplicaciones web.
+In this module you will learn the basic usage of the [Express.js](http://expressjs.com/) framework.
 
-## Ejercicio 01
+## Lab 01
 
-Hacer que el servidor http de este ejercicio devuelva un mensaje de ```hello world``` a cualquier request.
+Make this http server to return ```hello world``` to any request.
 
-[PISTA](http://nodejs.org/api/http.html#http_response_end_data_encoding)
+[CLUE](http://nodejs.org/api/http.html#http_response_end_data_encoding)
 
-## Ejercicio 02
+## Lab 02
 
-Dependiendo de la url del request:
+Given the url of the request, respond with:
 
--  para ```/hello``` devolver __hola mundo__
--  para ```/bye``` devolver __chau mundo__
--  para todo lo demás devolver status code 404
+-  ```/hello```: __hello world__
+-  ```/bye```: __bye world__
+-  any other url, return 404
 
 [PISTA 1](http://nodejs.org/api/http.html#http_message_url), [PISTA 2](http://nodejs.org/api/http.html#http_response_statuscode)
 
-## Ejercicio 03
+## Lab 03
 
-En los ejemplos anteriores usamos solamente el módulo ```http``` que viene incluído en node.js. En este ejercicio vamos a utilizar express.js. 
+In the previous examples we used the ```http``` module only which is included on node.js out of the box. In this exercise we will use express.js: 
 
-Agregar una ruta que:  
-
--  para ```/doc/{ID}``` devolver un objeto JSON con el docuento con dicho id.
--  si el ID no existe, devolver 404.
+Create a single route to return the json representation of a document given a url like ```/doc/{ID}```. If the document does not exists return ```404```.
 
 [PISTA 1](http://expressjs.com/api.html#req.params), [PISTA 2](http://expressjs.com/api.html#res.json)
 
-## Ejercicio 04
+## Lab 04
 
-En este ejercicio hemos extraído las rutas a un nuevo archivo. 
-Agregar la llamada a la función del modulo ```routes.js```.
+In this exercise we have refactor some routes to a new file named ```routes.js```.
+
+You should call this file.
 
 [PISTA](http://nodejs.org/api/modules.html)
 
-## Ejercicio 05
+## Lab 05
 
-En este ejercicio hemos agregado templates para nuestra aplicación. Modificar la ruta ```/doc/:id``` para que devuelve una página creada a partir del template ```doc```.
+We added some templates for our application. Modify the route ```/doc/:id``` to render and return an html created with this template.
 
 [PISTA](http://expressjs.com/api.html#res.render)
 
-## Ejercicio 06
+## Lab 06
 
-En este ejercicio agregamos un botón que permite guardar el documento, implementar la ruta PUT ```/doc/:id``` que modifica el contenido del documento.
+In this exercise we added a button in the UI to save the document. Implement a route in your server to handle PUT ```/doc/:id``` requests.

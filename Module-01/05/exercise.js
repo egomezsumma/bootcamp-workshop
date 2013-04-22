@@ -2,23 +2,28 @@ var http    = require('http');
 var express = require('express');
 var app     = express();
 
-var documentos = {
+app.configure(function (){
+  this.set("view engine", "jade");
+  this.set("views", __dirname + "/views");
+});
+
+var documents = {
   '12345': {
     id: '12345',
-    contenido: 'Documento 12345, blabliblo'
+    content: 'Document 12345, blabliblo'
   },
   '67891': {
     id: '67891',
-    contenido: 'Documento 67891, blabliblo'
+    content: 'Document 67891, blabliblo'
   }
 };
 
 app.get('/doc/:id', function (req, res) {
-  var doc = documentos[req.params.id];
+  var doc = documents[req.params.id];
   if (!doc) {
     res.send(404);
   } else {
-    res.json(doc);
+    // completar!
   }
 });
 
