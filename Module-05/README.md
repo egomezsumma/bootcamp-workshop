@@ -48,7 +48,7 @@ e.g. if I am working with user `woloski` and repo `bootcamp` this would be git c
 
 ## Excercise 2 - Asking for feedback with Pull Requests
 
-> As a rule of thumb: before pushing your branch to GitHub, it is a good practice to bring the latest changes from the `master` branch into your branch and merge/solve conflictss locally. This will make your Pull Request automtically mergeable from GitHub. In this case, there were no changes because there was no time for that. But otherwise you would have to do `git fetch origin` and `git rebase master` (sitting on top of your branch "some-feature")
+> As a rule of thumb: before pushing your branch to GitHub, it is a good practice to bring the latest changes from the `master` branch into your branch and merge/solve conflictss locally. This will make your Pull Request automtically mergeable from GitHub. In this case, there were no changes because there was no time for that. But otherwise you would have to do `git fetch origin` and `git rebase origin/master` (sitting on top of your branch "some-feature")
 
 1. You can now push your branch to your buddy repo. 
 
