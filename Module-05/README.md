@@ -30,21 +30,21 @@ Now that your code is in GitHub, the person you picked will be contributing to y
 
 2. Then, clone your team member repo
 
-    git clone git@github.com:team_member_user/team_member_repo.git
-    cd team_member_repo
+        git clone git@github.com:team_member_user/team_member_repo.git
+        cd team_member_repo
 
-e.g. if I am working with user `woloski` and repo `bootcamp` this would be git clone `git@github.com:woloski/bootcamp.git`
+    > e.g. if I am working with user `woloski` and repo `bootcamp` this would be git clone `git@github.com:woloski/bootcamp.git`
 
 3. You are ready to start working on the new feature. Create a branch for the feature:
 
-    git checkout -b some-feature
+        git checkout -b some-feature
 
-> This will create a branch on your local git repo and then switch to that branch.
+    > This will create a branch on your local git repo and then switch to that branch.
 
 4. Implement it and commit what you did into the feature branch
 
-    git add .
-    git commit -m "feature is complete"
+        git add .
+        git commit -m "feature is complete"
 
 ## Excercise 2 - Asking for feedback with Pull Requests
 
@@ -52,15 +52,15 @@ e.g. if I am working with user `woloski` and repo `bootcamp` this would be git c
 
 1. You can now push your branch to your buddy repo. 
 
-    git push -u origin some-feature
+        git push -u origin some-feature
 
-> What you are doing here is pushing your branch to the `origin` (i.e. GitHub) and tracking changes so that next time you can do just `git push` without the remote and branch.
+    > What you are doing here is pushing your branch to the `origin` (i.e. GitHub) and tracking changes so that next time you can do just `git push` without the remote and branch.
 
 2. Once you did that, you can go to your buddy's GitHub repo page and you will see a "Pull Request" button.
 
-![](http://puu.sh/2GfGz.png)
+    ![](http://puu.sh/2GfGz.png)
 
-Click on Pull Request and add a meaningful message of what you just did. You can also review the full change set in the other tabs.
+    Click on Pull Request and add a meaningful message of what you just did. You can also review the full change set in the other tabs.
 
 3. Your buddy will get an email notifying him/her about the pull request and hopefully you will get an email with your buddy's pull request. Click on the link to see the pull request of your buddy.
 
