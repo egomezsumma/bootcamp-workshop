@@ -1,6 +1,6 @@
 # Module 02 - Using MongoDB
 
-We will learn in these labs how to store documents in mongodb and query collections.
+In this module you will learn in these labs how to store documents in mongodb and query collections.
 
 ## Excercise 01
 

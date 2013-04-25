@@ -1,8 +1,8 @@
 # Module 6 - Continous Deployment - Jenkins
 
-In this lab, we will create a Linux VM on Windows Azure with Jenkins and configure it to pull the source code from GitHub and push it to Windows Azure.
+In this module, you will learn how to create a Linux VM on Windows Azure with Jenkins and configure it to pull the source code from GitHub and push it to Windows Azure to create a continuous integration environment.
 
-## Lab
+## Excercise 1 - Copy the Jenkins VM image to your account
 
 * Create a storage account for your VMs if you don't have one.
 
@@ -10,7 +10,7 @@ In this lab, we will create a Linux VM on Windows Azure with Jenkins and configu
 
 ![](http://puu.sh/2EoY6.png)
 
-* Choose Jenkins. I've chosen the latest version here.
+* Choose Jenkins.
 
 ![](http://puu.sh/2DWSv.png)
 
@@ -19,6 +19,8 @@ In this lab, we will create a Linux VM on Windows Azure with Jenkins and configu
 ![](http://puu.sh/2DWTs.png)
 
 > This process will take approx 20 minutes (it will copy the base vhd image template to your account which could be a couple of GB)
+
+## Excercise 2 - Create the VM
 
 * Once it finished copying, create the VM by clicking on NEW -> Virtual Machine -> From Gallery and choose the Jenkins image
 
@@ -36,6 +38,8 @@ In this lab, we will create a Linux VM on Windows Azure with Jenkins and configu
 
 ![](http://puu.sh/2DVjb.png)
 
+## Excercise 3 - Configure Jenkins
+
 * Now, you can browse the new Jenkins (http://yourjenkins.cloudapp.net)
 
 ![](http://puu.sh/2DVuK.png)
@@ -43,8 +47,6 @@ In this lab, we will create a Linux VM on Windows Azure with Jenkins and configu
 * Enter the app and use the following credentials (user: `user` and password: `bitnami`).
 
 > More users can be added later or you can configure the GitHub OAuth plugin to authenticate with github accounts
-
-## Create a job, configure GitHub and Windows Azure Web Sites repos
 
 * Now let's install the GitHub plugin. Go to **Manage Jenkins** -> **Manage Plugins**. Install "GitHub Plugin" (if plugins are not there, keep refreshing and they should appear soon)
 
@@ -56,12 +58,15 @@ In this lab, we will create a Linux VM on Windows Azure with Jenkins and configu
 
 * Click on **Configure System**. Set Github user.name y user.email to something arbitrary like "build"
 
+## Excercise 4 - Create a job to build from GitHub and deploy to Windows Azure
+
 * Next, create a new job and choose "Build a free-style software project"
 
 ![](http://puu.sh/2DVRj.png)
 
 * Click on Git radio button and add your GitHub repository.
-IMPORTANT: use the git read only endpoint from GitHub which has this form `git://github.com/username/repo.git`. This is a quick way of doing it, the other option is to copy your SSH keys to the VM, but since you will always READ from GitHub, this is ok.
+
+> IMPORTANT: use the git read only endpoint from GitHub which has this form `git://github.com/username/repo.git`. This is a quick way of doing it, the other option is to copy your SSH keys to the VM, but since you will always READ from GitHub, this is ok.
 
 ![](http://puu.sh/2DVW8.png)
 
@@ -71,15 +76,13 @@ IMPORTANT: use the git read only endpoint from GitHub which has this form `git:/
 
 * Click on **Advanced** and give it a name like "azure"
 
-## Create a post build action to push to Windows Azure Web Sites
-
 * Add a **Post-build** action of type **Git publisher**. Click on **Push Only If Build Succeeds**. Then, click on **Add branch** to configure the branch and target we want to deploy. Enter the following
     * branch: master
     * target: azure
 
 ![](http://puu.sh/2DW86.png)
 
-## Configure the GitHub web hook to automatically build on push
+## Excercise 5 - Configure the GitHub web hook to call Jenkins on every push
 
 * Make sure to check Build when a change is pushed to GitHub on the job
 
@@ -96,6 +99,10 @@ IMPORTANT: use the git read only endpoint from GitHub which has this form `git:/
 * If you go to the Azure Web Site you will also see that it pushed a new build
 
 ![](http://puu.sh/2DWhn.png)
+
+**Congratulations!**
+
+---
 
 ## Customize the environment
 

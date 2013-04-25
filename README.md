@@ -20,12 +20,21 @@ This workshop was prepared for the Global Windows Azure Bootcamp. We decided to 
 
 ### Module 1 - Intro to Node and Express
 
-### Module 2 - Deploy to Windows Azure Web Sites
+In this module you will learn the basic usage of the [Express.js](http://expressjs.com/) framework.
 
-### Module 3 - MongoDB
+### Module 2 - MongoDB
 
-### Module 4 - Authentication
+In this module you will learn in these labs how to store documents in mongodb and query collections.
+
+### Module 3 - Authentication
+
+### Module 4 - Deploy to Windows Azure Web Sites
 
 ### Module 5 - GitHub
 
+In this module, you will learn one way of using GitHub that has proven effective when working in teams. This same technique is being used by large development teams like GitHub themselves to build GitHub (and ourselves of course :)).
+
 ### Module 6 - Jenkins
+
+In this module, you will learn how to create a Linux VM on Windows Azure with Jenkins and configure it to pull the source code from GitHub and push it to Windows Azure to create a continuous integration environment.
+
