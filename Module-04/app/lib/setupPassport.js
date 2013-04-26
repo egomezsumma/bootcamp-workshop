@@ -1,0 +1,1 @@
+throw new Error('copy setupPassport.js from the previous exercise');
