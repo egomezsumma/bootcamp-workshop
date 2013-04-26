@@ -17,6 +17,10 @@
     "jade": "~0.27.4",
     "socket.io": "~0.9.10",
     "mongodb": "~1.1.11",
-    "mongo-getdb": "0.0.1"
+    "mongo-getdb": "0.0.1",
+    "passport": "~0.1.16",
+    "passport-auth0": "0.0.11",
+    "chai": "~1.5.0",
+    "mocha": "~1.9.0"
   }
 }
