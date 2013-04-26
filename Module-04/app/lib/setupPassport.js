@@ -1,1 +1,1 @@
-throw new Error('copy setupPassport.js from the previous exercise');
+throw new Error('copy setupPassport.js from the previous exercise or from Auth0');

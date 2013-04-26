@@ -22,6 +22,7 @@ app.configure(function (){
   
   this.use(function (req, res, next) {
     res.locals.user = req.user;
+    res.locals.env = process.env;
     next();
   });
 

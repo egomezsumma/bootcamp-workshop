@@ -26,7 +26,7 @@ Copy the client id from the setupPassport file.
 
 Now, to trigger the popup change the __/login__ link in the layout file to this:
 
-    a#sign-in.sign-in.btn.btn-primary.pull-right(href="/login", onclick="window.Auth0.signIn()") 
+    a#sign-in.sign-in.btn.btn-primary.pull-right(href="#", onclick="window.Auth0.signIn({onestep: true})") 
 
 Execute the solution and verify the popup is working.
 

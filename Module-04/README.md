@@ -34,8 +34,10 @@ For this lab you will need a Windows Azure Account (<http://www.windowsazure.com
         git add .
         git commit -m "initial commit"
         ## COPY THE GIT URL FROM THE AZURE PORTAL
-        git remote add azure https://YOUR_USER@YOUR-WEBSITE-NAME.scm.azurewebsites.net/YOUR-WEBSITE-NAME-woloski.git
+        git remote add azure https://YOUR-WEBSITE-NAME.scm.azurewebsites.net/YOUR-WEBSITE-NAME-woloski.git
         git push azure master
+
+> You will have to enter the user and password created in Step 4. The deployment status will be shown in the command line.
 
 6. If you go to the **DEPLOYMENTS** menu in the Windows Azure portal, you should see the deployment in progress.
 
@@ -49,17 +51,28 @@ If you notice, your code has the database connection string and Auth0 configurat
 
 In this exercise we will change the current code to use those variables and then configure them in Windows Azure Web Site.
 
-1. Go to `server.js` and modify the `getDb.init` line with:
+1. First, modify the way we open the http server, by passing the PORT environment variable. Every cloud PaaS will set this variable to the internal port where it is listening. If that variable is not defined, we'll use 8080 (in development)
+
+        http.createServer(app)
+            .listen(process.env.PORT || 8080, function () {
+              console.log('listening on http://localhost:' + process.env.PORT || 8080);
+            });
+
+1. Now let's do the same with the database. Go to `server.js` and modify the `getDb.init` line with:
 
         getDb.init({url: process.env.DB || 'mongodb://localhost/mymdocs'})
 
     > This is equivalent of "If there is an environment variable named DB, use that if not use mongodb://localhost..."
 
-2. Then go to `lib/setupPassport.js` and modify the `clientID` and `clientSecret` to use the same approach.
+2. Then, copy the `lib/setupPassport.js` from the previous exercise and modify the `clientID` and `clientSecret` to use the same approach.
 
         clientID:     process.env.AUTH0_CLIENTID || 'HERE IS YOUR DEV CLIENT ID',
         clientSecret: process.env.AUTH0_CLIENTSECRET || 'HERE IS YOUR DEV CLIENT SECRET',
-    
+
+2. Finally, we have the client id on the master layout page. Open `layout.jade` and change the line where the auth0.js file was added.
+
+        script(src='https://sdk.auth0.com/auth0.js#client=#{env.AUTH0_CLIENTID || "HERE IS YOUR DEV CLIENT ID" }')
+
 3. Commit and push to Windows Azure
 
         git commit -am "change to use env vars"
@@ -102,8 +115,15 @@ Windows Azure has a command line version to manage many aspects of the service. 
 
         npm install -g azure-cli
 
-And you will be able to see realtime logs streamed. Every `console.log` in your app
+And you will be able to see realtime logs streamed. Every `console.log` in your app. You have to create a file on the root of your repo called `iisnode.yml` with the following content
+
+        loggingEnabled: true
+        debuggingEnabled: true
+
+Add it using `git add .` and commit it with `git commit -am "logging"`, and deploy with `git push azure master`. Once you did that, you can do the following and you will get a stream of the logs in the console.
 
         azure site log tail YOUR-APP
+
+> If for some reason it is not working, click on the RESTART button on Azure console.
 
 You can explore the rest of the things in the Windows Azure Web Site (like config your own domain, how to scale it, etc.)
