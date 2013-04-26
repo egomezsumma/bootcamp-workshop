@@ -16,8 +16,6 @@ Run the code and verify you can login with the login button or using [http://loc
 
 ## Exercise 02
 
-Copy the same __setupPassport.js__ from the previous exercise.
-
 Since we are going to enable other authentication providers besides google, we need to show the user a popup to choose the authentication mechanism.
 
 Modify the layout.jade file to include this script
@@ -33,8 +31,6 @@ Now, to trigger the popup change the __/login__ link in the layout file to this:
 Execute the solution and verify the popup is working.
 
 ## Exercise 03
-
-Copy the same __setupPassport.js__ from the previous exercise.
 
 Now that we have succesfully implemented authentication we want to implement authorization. The documents a user create will be only availables for that particular user.
 
