@@ -6,7 +6,7 @@ In this module we will add authentication using the [Passport.js library](http:/
 
 Create a new account in Auth0 (we will provide you the instructions).
 
-Once you have successfully logged in, go to the Auth0 Node.js Tutorial (https://docs.auth0.com/nodejs-tutorial)[https://docs.auth0.com/nodejs-tutorial].
+Once you have successfully logged in, go to the  [Auth0 Node.js Tutorial](https://docs.auth0.com/nodejs-tutorial).
 
 __NOTE:__ it is very important that you first log in, all the documentation will be tailored to your settings.
 
