@@ -50,3 +50,11 @@ $ npm test
 ~~~
 
 Tests are included in the ```docs.tests.js```.
+
+
+## Exercise 04
+
+Some people want to login this application by using other identity providers. Go to the Auth0 dashboard and enable __Twitter__, __Facebook__ and __Github__.
+
+Now, execute the application and verify you can login with these new identity providers.
+
