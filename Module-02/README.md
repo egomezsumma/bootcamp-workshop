@@ -1,6 +1,14 @@
 # Module 02 - Using MongoDB
 
-In this module you will learn in these labs how to store documents in mongodb and query collections.
+In this module you will learn in these labs how to store documents in mongodb and query collections. If you don't have MongoDB installed locally, you can create one in the cloud using <http://mongolab.com>.
+
+Go to <http://mongolab.com>, login or create an account and then create a database like shown here.
+
+    ![](http://puu.sh/2HsJv.png)
+
+Finally, make sure to change in each exercise to point to the mongodb just created.
+
+        getDb.init({url: 'mongodb://....from mongolabs....'});
 
 ## Excercise 01
 

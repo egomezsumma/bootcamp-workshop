@@ -18,7 +18,7 @@ First thing is to create a repo in GitHub and push the your source code. You can
 
 Once you created the repo, you can add a remote to the folder and push
 
-    cd Module-04
+    cd Module-03 # or cd Module-04 if you didn't do that lab
     git remote add origin git@github.com:your_user/your_repo.git
     git push -u origin master
 
