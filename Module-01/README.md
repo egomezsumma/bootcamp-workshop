@@ -40,6 +40,6 @@ We added some templates for our application. Modify the route ```/doc/:id``` to 
 
 [TIP](http://expressjs.com/api.html#res.render)
 
-## Lab 06
+## Excercise 06
 
 In this exercise we added a button in the UI to save the document. Implement a route in your server to handle PUT ```/doc/:id``` requests.
