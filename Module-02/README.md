@@ -4,7 +4,7 @@ In this module you will learn in these labs how to store documents in mongodb an
 
 Go to <http://mongolab.com>, login or create an account and then create a database like shown here.
 
-    ![](http://puu.sh/2HsJv.png)
+![](http://puu.sh/2HsJv.png)
 
 Finally, make sure to change in each exercise to point to the mongodb just created.
 
