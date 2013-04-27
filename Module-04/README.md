@@ -27,7 +27,7 @@ For this lab you will need a Windows Azure Account (<http://www.windowsazure.com
 
 5. Once the repo has been setup, follow the instructions to create the local repo, then commit and push to Azure.
 
-> IMPORTANT: make sure you are currently sitting on the `Module-03` directory, with the previous exercise working (if you didn't finish that one, use Module-04/app)
+    > IMPORTANT: make sure you are currently sitting on the `Module-03` directory, with the previous exercise working (if you didn't finish that one, use Module-04/app)
 
         cd Module-03
         git init
@@ -37,13 +37,13 @@ For this lab you will need a Windows Azure Account (<http://www.windowsazure.com
         git remote add azure https://YOUR-WEBSITE-NAME.scm.azurewebsites.net/YOUR-WEBSITE-NAME-woloski.git
         git push azure master
 
-> You will have to enter the user and password created in Step 4. The deployment status will be shown in the command line.
+    > You will have to enter the user and password created in Step 4. The deployment status will be shown in the command line.
 
 6. If you go to the **DEPLOYMENTS** menu in the Windows Azure portal, you should see the deployment in progress.
 
     ![](http://puu.sh/2HfVQ.png)
 
-If the deployment worked fine you can now browse to the website. However, it should fail because of two things: the callback configured in Auth0 is localhost (not the cloud) and also it is pointing to the dev mongo db. We will fix that in the next exercise.
+If the deployment worked fine you can now browse to the website. However, it should fail because of various things: first of all, the port where node.js will start listening (8080) won't work in the cloud. Also the callback configured in Auth0 is localhost (not the cloud) and also it is pointing to the dev mongo db. We will fix that in the next exercise.
 
 ## Exercise 2 - Configuration management
 
@@ -64,7 +64,7 @@ In this exercise we will change the current code to use those variables and then
 
     > This is equivalent of "If there is an environment variable named DB, use that if not use mongodb://localhost..."
 
-2. Then, copy the `lib/setupPassport.js` from the previous exercise and modify the `clientID` and `clientSecret` to use the same approach.
+2. Then, modify the `clientID` and `clientSecret` on `lib/setupPassort.js` to use the same approach.
 
         clientID:     process.env.AUTH0_CLIENTID || 'HERE IS YOUR DEV CLIENT ID',
         clientSecret: process.env.AUTH0_CLIENTSECRET || 'HERE IS YOUR DEV CLIENT SECRET',
