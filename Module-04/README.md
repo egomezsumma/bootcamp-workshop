@@ -2,19 +2,19 @@
 
 ![](http://2.bp.blogspot.com/-mcZg2vTqzLQ/TZ-Dg2lNtiI/AAAAAAAABqM/M-rPoRG0m18/s1600/buzz-lightyear-toy-story-murals.jpg)
 
-In this exercise you will learn how to deploy the web site you've been working on. We will use git-based deploy, meaning that we will create 
+In this exercise you will learn how to deploy the web site you've been working on. We will use git-based deploy, meaning that we will be pushing a local repository to a remote one, running on the cloud.
 
 For this lab you will need a Windows Azure Account (<http://www.windowsazure.com/en-us/pricing/free-trial/>)
 
 ## Excercise 1 - Create the Windows Azure Web Site
 
-1. Open the Windows Azure Management Portal 
+1. Open the [Windows Azure Management Portal](http://manage.windowsazure.com)
 
 2. Create a Web Site (+ -> Compute -> Web Site -> Quick Create) and enter a subdomain for the website
 
     ![](http://puu.sh/2H310.png)
 
-3. We will use git-based deployment, that means, that you will push your repo to a git repo hosted on Windows Azure.
+3. Click on the website just created. We will use git-based deployment, that means, that you will push your repo to a git repo hosted on Windows Azure, so click on **Setup deployment from source control**.
 
     ![](http://puu.sh/2H36A.png)
 
@@ -27,9 +27,9 @@ For this lab you will need a Windows Azure Account (<http://www.windowsazure.com
 
 5. Once the repo has been setup, follow the instructions to create the local repo, then commit and push to Azure.
 
-> IMPORTANT: make sure you are currently sitting on the `Module-04/app` directory
+> IMPORTANT: make sure you are currently sitting on the `Module-03` directory, with the previous exercise working (if you didn't finish that one, use Module-04/app)
 
-        cd Module-04/app
+        cd Module-03
         git init
         git add .
         git commit -m "initial commit"
