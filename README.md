@@ -18,7 +18,11 @@ This workshop was prepared for the Global Windows Azure Bootcamp. We decided to 
 
 ## Modules
 
-### Module 1 - Intro to Node and Express
+### Module 0 - Intro to Node 
+
+Learn some basic concepts about node.js.
+
+### Module 1 - Intro to Express
 
 In this module you will learn the basic usage of the [Express.js](http://expressjs.com/) framework. ([Presentation](https://docs.google.com/a/qraftlabs.com/presentation/d/1apSV-9Tf9r-DqR9VD024a1YYfe2RmIB5AlxXdAGcF5I) | [Labs](/Module-01))
 
