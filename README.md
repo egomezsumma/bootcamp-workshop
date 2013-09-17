@@ -1,19 +1,23 @@
 ## Introduction
 
-This workshop was prepared for the Global Windows Azure Bootcamp. We decided to do a node.js focused workshop, kind of like "startup-in-a-box". In this workshop we will go through creating a node.js application, deploy it to the cloud, adding persistance with MongoDB, authenticate users with social providers using [Auth0](http://auth0.com), making good use of GitHub and configure a continuous deployment environment with Jenkins
+Welcome! In this bootcamp we will create a node.js application, adding persistance with MongoDB, authenticate users with social providers, making good use of GitHub an deploy it to the cloud.
+You are going to learn from people who have actual experience building [software](http://github.com/auth0) using these technologies.
 
 ## Tools you'll need
+
+Bring your laptop with the following software pre-installted:
 
 1. node.js http://nodejs.org/download/ 
 
 2. Text editor. We recommend:
     -  Sublime Text 2 http://www.sublimetext.com/2 
-    -  Textmate (solo OSx) http://macromates.com/ 
-    -  E-TextEditor (solo Windows) http://www.e-texteditor.com/ 
-
-3. Git 
-    -  windows and osx: http://git-scm.com/downloads 
-    -  linux install with apt-get, yum or whatever package manager you use
+    -  Textmate (OSx only) http://macromates.com/ 
+    -  E-TextEditor (Windows only) http://www.e-texteditor.com/ 
+    -  Adobe Brackets http://brackets.io/
+3. Git (remember to setup your user name and email)
+    -  __windows__: https://help.github.com/articles/set-up-git#platform-windows
+    -  __linux__: https://help.github.com/articles/set-up-git#platform-linux
+    -  __mac__: https://help.github.com/articles/set-up-git#platform-mac
 
 
 ## Modules
@@ -46,3 +50,10 @@ In this module, you will learn one way of using GitHub that has proven effective
 
 In this module, you will learn how to create a Linux VM on Windows Azure with Jenkins and configure it to pull the source code from GitHub and push it to Windows Azure to create a continuous integration environment. ([Presentation](https://docs.google.com/a/qraftlabs.com/file/d/0BzCGxIGh-G4MRmRSLTlseUJIRmc/edit) | [Labs](/Module-06))
 
+### Sign up
+
+http://nodejsbootcamp.com
+
+## Why is this guide in English?
+
+At the end of the workshop we release all the material as Open Source software to github so anyone can benefit from it. We get a lot of feedback from noders arround the world.
