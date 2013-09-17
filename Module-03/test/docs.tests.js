@@ -2,7 +2,7 @@ var expect = require('chai').expect;
 var ObjectID = require('mongodb').ObjectID;
 
 var getDb = require('mongo-getdb');
-getDb.init({url: 'mongodb://localhost/mydocs-tests'});
+getDb.init('mongodb://localhost/mydocs-tests'});
 
 var docs = require('../lib/docs');
 

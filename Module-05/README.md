@@ -12,7 +12,7 @@ You work on a branch, when you are done you'll push it to GitHub and open a Pull
 
 > IMPORTANT: For these exercises, we will make teams of two people. Pick someone else from the attendees to be your buddy.
 
-## Excercise 0 - Push your code to GitHub
+## Exercise 0 - Push your code to GitHub
 
 First thing is to create a repo in GitHub and push the your source code. You can use the folder from the previous exercise.
 
@@ -22,7 +22,7 @@ Once you created the repo, you can add a remote to the folder and push
     git remote add origin git@github.com:your_user/your_repo.git
     git push -u origin master
 
-## Excercise 1 - Adding a new feature
+## Exercise 1 - Adding a new feature
 
 Now that your code is in GitHub, the person you picked will be contributing to your repo and viceversa with a small improvement (make sure that is small so you implement this quickly).
 
@@ -46,7 +46,7 @@ Now that your code is in GitHub, the person you picked will be contributing to y
         git add .
         git commit -m "feature is complete"
 
-## Excercise 2 - Asking for feedback with Pull Requests
+## Exercise 2 - Asking for feedback with Pull Requests
 
 > As a rule of thumb: before pushing your branch to GitHub, it is a good practice to bring the latest changes from the `master` branch into your branch and merge/solve conflictss locally. This will make your Pull Request automtically mergeable from GitHub. In this case, there were no changes because there was no time for that. But otherwise you would have to do `git fetch origin` and `git rebase origin/master` (sitting on top of your branch "some-feature")
 

@@ -8,9 +8,9 @@ Go to <http://mongolab.com>, login or create an account and then create a databa
 
 Finally, make sure to change in each exercise to point to the mongodb just created.
 
-        getDb.init({url: 'mongodb://....from mongolabs....'});
+        getDb.init('mongodb://....from mongolabs....'});
 
-## Excercise 01
+## Exercise 01
 
 We have added a new route ```/new``` that creates a document and redirects to ```/doc/{id}```. 
 
@@ -18,7 +18,7 @@ Implement the __GET__ ```/doc/{id}``` route to fetch the document from the datab
 
 [TIP](http://mongodb.github.io/node-mongodb-native/api-generated/collection.html#findone)
 
-## Excercise 02
+## Exercise 02
 
 Now is time to save updates in the database.
 
@@ -26,7 +26,7 @@ Create a handler for __PUT__ ```/doc/{id}``` to update the document with the new
 
 [TIP](http://mongodb.github.io/node-mongodb-native/api-generated/collection.html#update)
 
-## Excercise 03
+## Exercise 03
 
 Now, let's add a list of documents to the home. Implement the __GET__ ```/``` handler to fetch the first 10 documents from the collection.
 
@@ -34,7 +34,7 @@ _Extra points_: implement the search search box (i.e. __GET__ ```/?search=someth
 
 [TIP](http://mongodb.github.io/node-mongodb-native/api-generated/collection.html#find), [TIP](http://docs.mongodb.org/manual/reference/operator/regex/)
 
-## Excercise 04
+## Exercise 04
 
 We have added a new feature to edit the title of the document by clicking it. It will do a __PATCH__ request to ```/doc/:id``` with ```{title: 'new title'}```.
 

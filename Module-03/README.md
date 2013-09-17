@@ -2,7 +2,7 @@
 
 In this module we will add authentication using the [Passport.js library](http://passportjs.org/).
 
-Before we start, run on the Module-03
+Before we start, `cd` to the Module-03 dir and run on the Module-03
 
     npm install 
 
@@ -10,13 +10,9 @@ This will read all the dependencies on `package.json` and install them.
 
 ## Exercise 01
 
-Create a new account in Auth0 (we will provide you the instructions).
+Create a new account in Auth0.
 
-Once you have successfully logged in, go to the  [Auth0 Node.js Tutorial](https://docs.auth0.com/nodejs-tutorial).
-
-> __NOTE:__ it is very important that you first log in, all the documentation will be tailored to your settings.
-
-Copy the very first code snipet into the ```lib/setupPassport.js``` file.
+Register a new Node.js Application in Auth0 and follow the steps `1` and `2` in the instructions to integrate your app. In the step 4 change the url `http://localhost:8080/callback`.
 
 Run the code and verify you can login with the login button or using [http://localhost:8080/login](http://localhost:8080/login). By default, Auth0 comes pre-configred with Google authentication, we will enable others later. You can see in the console, the full profile in JSON.
 
@@ -24,7 +20,7 @@ Run the code and verify you can login with the login button or using [http://loc
 
 Since we are going to enable other authentication providers besides google, we need to show the user a popup to choose the authentication mechanism.
 
-Modify the `views/layout.jade` file to include this script (the client id can be copied from the `setupPassport.js` file).
+Modify the `views/layout.jade` file to include this script (the client id can be copied from the `setup-passport.js` file).
 
     script(src='https://sdk.auth0.com/auth0.js#client=[ YOUR AUTH0 CLIENT ID ]')
 

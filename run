@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+require('colors');
+
+var exec = require('child_process').exec;
+
+var file = !process.argv[4] ? 'exercise' : 'solution';
+
+var cmd_line = 'node Module-' + process.argv[2] + '/' + process.argv[3] + '/' + file + '.js';
+
+console.log('running: '.blue + cmd_line  + '\n\n');
+
+var proc = exec(cmd_line);
+
+proc.stdout.pipe(process.stdout);
+proc.stderr.pipe(process.stderr);

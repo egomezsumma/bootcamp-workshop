@@ -5,13 +5,14 @@ var getDb    = require('mongo-getdb');
 var docs     = require('./lib/docs');
 var passport = require('passport');
 
-getDb.init({url: 'mongodb://localhost/mymdocs'});
+getDb.init(process.env.MONGOLAB_URI || 'mongodb://localhost/mymdocs');
 
-require('./lib/setupPassport');
+require('./lib/setup-passport');
 
 app.configure(function (){
   this.set("view engine", "jade");
   this.set("views", __dirname + "/views");
+  this.use(express.logger());
   this.use(express.bodyParser());
   this.use(express.static(__dirname + '/public'));
   this.use(express.cookieParser());
@@ -96,7 +97,9 @@ app.get('/login',
     res.redirect("/");
   });
 
+var port = process.env.PORT || 8080;
+
 http.createServer(app)
-    .listen(8080, function () {
-      console.log('listening on http://localhost:8080');
+    .listen(port, function () {
+      console.log('listening on http://localhost:' + port);
     });

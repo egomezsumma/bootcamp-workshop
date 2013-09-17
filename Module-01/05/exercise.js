@@ -23,7 +23,7 @@ app.get('/doc/:id', function (req, res) {
   if (!doc) {
     res.send(404);
   } else {
-    // completar!
+    // complete!
   }
 });
 
