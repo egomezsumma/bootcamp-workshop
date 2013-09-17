@@ -30,9 +30,9 @@ In this module you will learn how to store documents in mongodb and query collec
 
 In this module you will learn how to protect the web app using [passport.js](http://passport.js) and [Auth0](http://auth0.com). ([Presentation](http://www.rvl.io/woloski/auth10) | [Labs](/Module-03))
 
-### Module 4 - Deploy to Windows Azure Web Sites
+### Module 4 - Deploy to Heroku
 
-In this module you will learn how to deploy your app to the cloud using Windows Azure Web Sites and how to handle the configuration on different environments. ([Presentation](https://docs.google.com/a/qraftlabs.com/presentation/d/1cscuaogdX1F_tWMXdB_pW-zupMBN_37R44niDMySArk/edit) | [Labs](/Module-04))
+In this module you will learn how to deploy your app to the cloud using Heroku and how to handle the configuration on different environments. ([Presentation](https://docs.google.com/a/qraftlabs.com/presentation/d/1cscuaogdX1F_tWMXdB_pW-zupMBN_37R44niDMySArk/edit) | [Labs](/Module-04))
 
 ### Module 5 - GitHub
 
