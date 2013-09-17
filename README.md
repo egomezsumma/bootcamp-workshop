@@ -57,3 +57,7 @@ http://nodejsbootcamp.com
 ## Why is this guide in English?
 
 At the end of the workshop we release all the material as Open Source software to github so anyone can benefit from it. We get a lot of feedback from noders arround the world.
+
+## License 
+
+MIT 2013 - AUTH0
