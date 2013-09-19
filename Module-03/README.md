@@ -14,6 +14,8 @@ Create a new account in Auth0.
 
 Register a new Node.js Application in Auth0 and follow the steps `1` and `2` in the instructions to integrate your app. In the step 4 change the url `http://localhost:8080/callback`.
 
+![](https://dl.dropbox.com/s/6ca2ebv64m9022e/ss-2013-09-19T19-20-38.png)
+
 Run the code and verify you can login with the login button or using [http://localhost:8080/login](http://localhost:8080/login). By default, Auth0 comes pre-configred with Google authentication, we will enable others later. You can see in the console, the full profile in JSON.
 
 ## Exercise 02

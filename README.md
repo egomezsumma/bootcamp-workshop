@@ -59,14 +59,6 @@ In this module you will learn how to protect the web app using [passport.js](htt
 
 In this module you will learn how to deploy your app to the cloud using Heroku and how to handle the configuration on different environments. ([Presentation](https://docs.google.com/a/qraftlabs.com/presentation/d/1cscuaogdX1F_tWMXdB_pW-zupMBN_37R44niDMySArk/edit) | [Labs](/Module-04))
 
-### Module 5 - GitHub
-
-In this module, you will learn one way of using GitHub that has proven effective when working in teams. This same technique is being used by large development teams like GitHub themselves to build GitHub (and ourselves of course :)). ([Labs](/Module-05))
-
-### Module 6 - Jenkins
-
-In this module, you will learn how to create a Linux VM on Windows Azure with Jenkins and configure it to pull the source code from GitHub and push it to Windows Azure to create a continuous integration environment. ([Presentation](https://docs.google.com/a/qraftlabs.com/file/d/0BzCGxIGh-G4MRmRSLTlseUJIRmc/edit) | [Labs](/Module-06))
-
 ### Sign up
 
 http://nodejsbootcamp.com
