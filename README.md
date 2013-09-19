@@ -19,6 +19,23 @@ Bring your laptop with the following software pre-installted:
     -  __linux__: https://help.github.com/articles/set-up-git#platform-linux
     -  __mac__: https://help.github.com/articles/set-up-git#platform-mac
 
+## Running the exercises
+
+Open a terminal (OSx and Linux) or a CMD (Windows) and navigate to the directory where you downloaded the zip file. 
+
+First time you will need to install the dependencies as follow:
+
+	npm install
+
+Then you can run the exercises with node:
+
+	node Module-00/01/exercise.js # to run the exercise
+	node Module-00/01/solution.js # to run the solution
+
+or you can use the `run` command as follows:
+	
+	./run 00 01   # to run the exercise
+	./run 00 01 ! # to run the solution
 
 ## Modules
 
