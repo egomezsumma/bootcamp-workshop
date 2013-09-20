@@ -10,13 +10,20 @@ This will read all the dependencies on `package.json` and install them.
 
 ## Exercise 01
 
-Create a new account in [Auth0](http://developers.auth0.com).
+Create a new account in [Auth0](http://developers.auth0.com). You will be asked to provide a subdomain for your account and then choose the authentication providers you want for your apps. Don't worry you can change them later.
 
-Register a new Node.js Application in Auth0 and follow the steps `1` and `2` in the instructions to integrate your app. In the step 4 change the url `http://localhost:8080/callback`.
+![ss-2013-09-20T07-12-23.png](http://blog.auth0.com.s3.amazonaws.com/ss-2013-09-20T07-12-23.png)
+
+Register a new __Node.js__ app in Auth0. 
+
+![ss-2013-09-20T07-15-24.png](http://blog.auth0.com.s3.amazonaws.com/ss-2013-09-20T07-15-24.png)
+
+You will be presented with a tutorial. Follow the steps `1` and `2` in the instructions to setup passport with Auth0. We've done step 3 already in the provided initial code. 
+Finally on step 4 change the url to `http://localhost:8080/callback` which is where your local app is running.
 
 ![](https://dl.dropbox.com/s/6ca2ebv64m9022e/ss-2013-09-19T19-20-38.png)
 
-Run the code and verify you can login with the login button or using [http://localhost:8080/login](http://localhost:8080/login). By default, Auth0 comes pre-configred with Google authentication, we will enable others later. You can see in the console, the full profile in JSON.
+Run the code and verify you can login with the login button or using [http://localhost:8080/login](http://localhost:8080/login). You can see in the console, the full profile in JSON.
 
 ## Exercise 02
 
@@ -55,12 +62,18 @@ Tests are included in the ```docs.tests.js```.
 
 ## Exercise 04
 
-Some people want to login this application by using other identity providers. Go to the Auth0 dashboard and enable __Twitter__, __Facebook__ and __Github__.
+Go to the Auth0 dashboard and enable other providers like Facebook or GitHub (you can enable up to two in the free plan).
 
 Now, execute the application and verify you can login with these new identity providers.
 
-![](http://puu.sh/2HMjs.png)
+![ss-2013-09-20T07-18-34.png](http://blog.auth0.com.s3.amazonaws.com/ss-2013-09-20T07-18-34.png)
 
-You can also setup enterprise connections like Google Apps, Windows Azure AD, or something like AD/LDAP running on your customer datacenter and allow single sign on for a whole company.
+You can do many other things with Auth0 like: 
+
+* Setup enterprise providers like Google Apps, Windows Azure AD, or something like AD/LDAP running on your customer datacenter and allow single sign on for a whole company. 
+* Associate different identities to the same account.
+* Plug your own user database.
+* Run arbitrary code on with rules to allow someone to enter.
+* Analytics and auditing.
 
 **Congratulations!**
