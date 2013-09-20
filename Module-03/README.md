@@ -10,7 +10,7 @@ This will read all the dependencies on `package.json` and install them.
 
 ## Exercise 01
 
-Create a new account in Auth0.
+Create a new account in [Auth0](http://developers.auth0.com).
 
 Register a new Node.js Application in Auth0 and follow the steps `1` and `2` in the instructions to integrate your app. In the step 4 change the url `http://localhost:8080/callback`.
 
