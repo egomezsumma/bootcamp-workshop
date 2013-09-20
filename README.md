@@ -45,19 +45,19 @@ Learn some basic concepts about node.js.
 
 ### Module 1 - Intro to Express
 
-In this module you will learn the basic usage of the [Express.js](http://expressjs.com/) framework. ([Presentation](https://docs.google.com/a/qraftlabs.com/presentation/d/1apSV-9Tf9r-DqR9VD024a1YYfe2RmIB5AlxXdAGcF5I) | [Labs](/Module-01))
+In this module you will learn the basic usage of the [Express.js](http://expressjs.com/) framework. ([Presentation](https://docs.google.com/presentation/d/1apSV-9Tf9r-DqR9VD024a1YYfe2RmIB5AlxXdAGcF5I/edit?usp=sharing) | [Labs](/Module-01))
 
 ### Module 2 - MongoDB
 
-In this module you will learn how to store documents in mongodb and query collections. ([Presentation](https://docs.google.com/a/qraftlabs.com/presentation/d/1zGwQSFBwEZG2w8C9AOpMSsoMAa6MipvG61yUaxueRnA) | [Labs](/Module-02))
+In this module you will learn how to store documents in mongodb and query collections. ([Presentation](https://docs.google.com/presentation/d/1zGwQSFBwEZG2w8C9AOpMSsoMAa6MipvG61yUaxueRnA/edit?usp=sharing) | [Labs](/Module-02))
 
 ### Module 3 - Authentication
 
-In this module you will learn how to protect the web app using [passport.js](http://passport.js) and [Auth0](http://auth0.com). ([Presentation](http://www.rvl.io/woloski/auth10) | [Labs](/Module-03))
+In this module you will learn how to protect the web app using [passport.js](http://passport.js) and [Auth0](http://auth0.com). ([Presentation](https://docs.google.com/presentation/d/17I5VRXu4IHj6Ll55fb_zYvgFwIz3ethLFNDdS4XwAJ0/edit?usp=sharing) | [Labs](/Module-03))
 
 ### Module 4 - Deploy to Heroku
 
-In this module you will learn how to deploy your app to the cloud using Heroku and how to handle the configuration on different environments. ([Presentation](https://docs.google.com/a/qraftlabs.com/presentation/d/1cscuaogdX1F_tWMXdB_pW-zupMBN_37R44niDMySArk/edit) | [Labs](/Module-04))
+In this module you will learn how to deploy your app to the cloud using Heroku and how to handle the configuration on different environments. ([Presentation](https://docs.google.com/presentation/d/1AhQ-GRpye7ray17wxvSAJPFycIi4R7Q3UFWOby5pqtg/edit?usp=sharing) | [Labs](/Module-04))
 
 ### Sign up
 
