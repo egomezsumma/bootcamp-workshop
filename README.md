@@ -41,11 +41,11 @@ or you can use the `run` command as follows:
 
 ### Module 0 - Intro to Node 
 
-Learn some basic concepts about node.js.
+Learn some basic concepts about node.js. ([Presentation](https://docs.google.com/presentation/d/1apSV-9Tf9r-DqR9VD024a1YYfe2RmIB5AlxXdAGcF5I/edit?usp=sharing) | [Labs](/Module-00))
 
 ### Module 1 - Intro to Express
 
-In this module you will learn the basic usage of the [Express.js](http://expressjs.com/) framework. ([Presentation](https://docs.google.com/presentation/d/1apSV-9Tf9r-DqR9VD024a1YYfe2RmIB5AlxXdAGcF5I/edit?usp=sharing) | [Labs](/Module-01))
+In this module you will learn the basic usage of the [Express.js](http://expressjs.com/) framework. ([Presentation](https://docs.google.com/a/auth10.com/presentation/d/195rxbSJeuRdFwx03ARUhrU72D1Eqr0vlK-1SUiKoYic/edit) | [Labs](/Module-01))
 
 ### Module 2 - MongoDB
 
