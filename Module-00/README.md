@@ -17,3 +17,9 @@ Read a file and print the content.
 ## Exercise 03
 
 Import the `sum` module to complete the code.
+
+## Exercise 04
+
+Get the weather for Montevideo from this JSON API <http://api.openweathermap.org/data/2.5/weather?q=Montevideo> and print it to the console.
+
+Hint: you will have to install the `request` module
