@@ -1,0 +1,6 @@
+{
+  "name": "weather",
+  "dependencies": {
+    "request": "~2.34.0"
+  }
+}
